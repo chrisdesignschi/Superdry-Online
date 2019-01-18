@@ -1,0 +1,758 @@
+<!-- Hi! This is a coding project I created for Free Code Camp — the original assignment was a basic product landing page, but I got really into it. I am a super fan of Superdry (the fashion brand) and decided to use my design, motion graphics, and newfound coding skills to create this website and use it on my portfolio. This is using a combination of HTML and CSS I learned on Free Code Camp, W3Schools, and Stack Overflow. There are tiny bits of JS scattered throughout I also learned on Mozilla's site.-->
+
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="https://www.superdry.com/us/favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/f90f1518e8.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<title>Superdry USA</title>
+</head>
+<body>
+
+<div id="ac-wrapper" style='display:none' onClick="PopUp('hide')">
+    <div id="popup">
+        <div>
+             <h2>Hi! This is a project designed & developed by Chris Zhu.</h2>
+             <p>You can learn more about this project and see documentation on <a href="https://www.chriszhu-design.com/">my website</a>.</p>
+             <p>This Superdry online store redesign was a month long marketing, coding, and design project — I started with sketches, and no coding skills. It's designed to have a greater emphasis on more frequent user interaction. You can find the original <a href="superdry.com/us/">website here.</a></p>
+             <p>Click anywhere on the page to dismiss this box.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+    else document.getElementById('ac-wrapper').removeAttribute('style');
+}
+window.onload = function () {
+    setTimeout(function () {
+        PopUp('show');
+    });
+}
+</script>
+
+<!-- main content begins -->
+
+<div class="banner-container">
+
+<div class="banner">
+
+<div><a href="#drops" alt="">50% OFF ALL ITEMS <i class="fas fa-shopping-bag"></i></a></div>
+<div><a href="#shopsdiv" alt="">Find a Store <i class="fas fa-map-marker-alt"></i></a></div>
+<div><a href="" alt="">224-585-0008 <i class="fas fa-phone"></i></a></div>
+<div class="sss2"><a href="" alt="">Log in/Register</a></div>
+
+
+</div>
+
+</div>
+
+<header id="header">
+
+	<div class="user-info">
+		<div class="kencosgrove">
+
+			<a href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+
+			<div class="gymtest">
+			<span class="gotothegym">Account</span>
+			<ul style="list-style:none; padding:0px;">
+				<a href=""><li>Chris Zhu</li></a>
+				<a href=""><li>View Purchases</li></a>
+				<a href=""><li>Suggestions for You</li></a>
+				<a href=""><li>Support</li></a>
+				<a href=""><li>Sign Out</li></a>
+			</ul>
+			</div>
+
+		</div>
+
+		<div class="cart">
+
+			<a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+
+			<div class="leg-cart">
+			<!-- <span class="gotothegym2">Cart</span> -->
+			<!-- all items, total cost comes after this -->
+			<div class="all-items">
+
+
+			<!-- item 1 -->
+
+			<script type="text/javascript">
+			<!--
+  			function toggle_visibility(id) {
+			var e = document.getElementById(id);
+			if(e.style.display == 'block')
+			e.style.display = 'none';
+			else
+				e.style.display = 'none';
+			}
+
+			</script>
+
+			<ul class="item-container" id="item-1">
+
+				<a href=""><li class="cart-item">
+					<img src="https://image1.superdry.com/static/images/optimised/zoom/upload9223368955665463100.jpg" alt="item">
+				</li></a>
+
+				<li class="cart-item-info checkboxha">
+					<a href=""><span class="cart-item-info-h2">Wax Edition Everest Parka</span><br>
+</span></a>
+					<span class="cart-item-info-price">$114.75 <s>$229.50</s> </span>
+					<section class="cart-item-info-desc">Size: <b>M</b>Amount: <b>1</b></section>
+					<a style="font-size: 13px !important; color:#eb5417;" href="#" onclick="toggle_visibility('item-1');">Remove item</a>
+				</li>
+
+			</ul>
+
+			<ul class="item-container" id="item-2">
+
+				<a href=""><li class="cart-item">
+					<img src="https://image1.superdry.com/static/images/optimised/zoom/upload8364843288078816456.jpg" alt="item">
+				</li></a>
+
+				<li class="cart-item-info checkboxha">
+					<a href=""><span class="cart-item-info-h2">Chillout Zip Hoodie</span></a><br>
+					<span class="cart-item-info-price">$37.25 <s>$74.50</s> </span>
+					<section class="cart-item-info-desc">Size: <b>S</b>Amount: <b>1</b></section>
+					<a style="font-size: 13px !important; color:#eb5417;" href="#" onclick="toggle_visibility('item-2');">Remove item</a>
+				</li>
+
+			</ul>
+
+			<ul class="item-container" id="item-3">
+
+				<a href=""><li class="cart-item">
+					<img src="https://image1.superdry.com/static/images/optimised/zoom/upload9223368955665397939.jpg" alt="item">
+				</li></a>
+				
+				<li class="cart-item-info checkboxha">
+					<a href=""><span class="cart-item-info-h2">Rollman Backpack</span></a><br>
+
+					<span class="cart-item-info-price">$29.75 <s>$59.50</s> </span>
+					<section class="cart-item-info-desc">Size: <b>n/a</b>Amount: <b>1</b></section>
+					<a style="font-size: 13px !important; color:#eb5417;" href="#" onclick="toggle_visibility('item-3');">Remove item</a>
+				</li>
+
+			</ul>
+
+			<span class="give-me-a-break"><a style="color:#999" href="index.html">Refresh page to update price</a></span>
+
+			</div> <!-- all items end -->
+
+			<div class="your-total">
+<!-- 				<h2 class="item-amount">4 items</h2>
+ -->				<h2 class="discount-amount">Discount — $211.50</h2>
+				<h2 class="total-amount">Total — $224.72</h2>
+
+				<div class="your-total-buttons"><a href="" class="viewbag">View Bag</a><a href="" class="checkout">Check Out</a></div>
+
+			</div>
+
+			<div class="im-free">
+				<span class="not-naked">FREE SHIPPING TO US, UK, EU</span>
+			</div>
+
+
+			<!-- item stops -->
+
+
+
+		</div>
+
+
+
+		</div>
+
+	</div>
+
+
+	<nav id="nav-bar">
+			<ul id="nav-bar-ul">
+			
+			<li id="logo"><img draggable="false" id="header-img" src="https://www.superdry.com/us/public/images/superdry-logo.png" alt="logo">
+
+			</li>
+			<li></li>
+			<li class="hover"><a class="nav-link" href="#mens">MEN</a>
+				<ul class="nav-second" id="mens-nav">
+					<li class="startli"><span class="nav-2-title" style="color:#eb5417 !important">Sale</span>
+						
+						<ul class="nav-2-list saleah" style="color:#eb5417 !important">
+							<a href="" class="nav-2-link"><div>Prints <b style="color:#eb5417 !important;">NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Superdry Sport <b style="color:#eb5417 !important;">NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Windcheater Collection</div></a>
+							<a href="" class="nav-2-link"><div>New Season</div></a>
+
+						</ul>
+
+					</li>
+					<li><span class="nav-2-title">Outerwear</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Jackets</div></a>
+							<a href="" class="nav-2-link"><div>Windcheaters<b style="color:#eb5417 !important;"> NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Down Jackets</div></a>
+							<a href="" class="nav-2-link"><div>Leather Jackets</div></a>
+							<a href="" class="nav-2-link"><div>Gilets</div></a>
+						</ul>
+
+					</li>
+
+					<li><span class="nav-2-title">Tops</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Hoodies</div></a>
+							<a href="" class="nav-2-link"><div>Tops</div></a>
+							<a href="" class="nav-2-link"><div>Sweaters</div></a>
+							<a href="" class="nav-2-link"><div>T-shirts</div></a>
+							<a href="" class="nav-2-link"><div>Shirts</div></a>
+							<a href="" class="nav-2-link"><div>Gilets</div></a>
+						</ul>
+
+					</li>
+					<li><span class="nav-2-title">Bottoms</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Jeans</div></a>
+							<a href="" class="nav-2-link"><div>Pants<b style="color:#eb5417 !important;"> NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Sweatpants</div></a>
+							<a href="" class="nav-2-link"><div>Shorts</div></a>
+							<a href="" class="nav-2-link"><div>Swimwear</div></a>
+						</ul>
+
+					</li>
+
+					<li><span class="nav-2-title">Footwear</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Boots<b style="color:#eb5417 !important;"> NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Sneakers</div></a>
+							<a href="" class="nav-2-link"><div>Shoes<b style="color:#eb5417 !important;"> NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Flip Flops</div></a>
+						</ul>
+
+					</li>
+
+					<li class="endli"><span class="nav-2-title">Accessories</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Bags</div></a>
+							<a href="" class="nav-2-link"><div>Underwear</div></a>
+							<a href="" class="nav-2-link"><div>Socks</div></a>
+							<a href="" class="nav-2-link"><div>Knitted Accessories</div></a>
+							<a href="" class="nav-2-link"><div>Other Accessories</div></a>
+						</ul>
+
+					</li>
+					
+				</ul>
+			</li>
+<!-- -->
+			<li class="hover"><a class="nav-link" href="#womens">WOMENS</a>
+
+					<ul class="nav-second" id="womens-nav">
+					<li class="startli"><span class="nav-2-title" style="color:#eb5417 !important">Sale</span>
+						
+						<ul class="nav-2-list saleah" style="color:#eb5417 !important">
+							<a href="" class="nav-2-link"><div>Prints <b style="color:#eb5417 !important;">NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Superdry Sport <b style="color:#eb5417 !important;">NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Windcheater Collection</div></a>
+							<a href="" class="nav-2-link"><div>New Season</div></a>
+
+						</ul>
+
+					</li>
+					<li><span class="nav-2-title">Outerwear</span>
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Jackets</div></a>
+							<a href="" class="nav-2-link"><div>Windcheaters</div></a>
+							<a href="" class="nav-2-link"><div>Down Jackets</div></a>
+							<a href="" class="nav-2-link"><div>Leather Jackets</div></a>
+							<a href="" class="nav-2-link"><div>Gilets</div></a>
+						</ul>
+
+					</li>
+
+					<li><span class="nav-2-title">Tops</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Hoodies</div></a>
+							<a href="" class="nav-2-link"><div>Tops</div></a>
+							<a href="" class="nav-2-link"><div>Sweaters</div></a>
+							<a href="" class="nav-2-link"><div>Dresses</div></a>
+							<a href="" class="nav-2-link"><div>T Shirts<b style="color:#eb5417 !important;"> NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Shirts<b style="color:#eb5417 !important;"> NEW</b></div></a>
+						</ul>
+
+					</li>
+					<li><span class="nav-2-title">Bottoms</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Jeans</div></a>
+							<a href="" class="nav-2-link"><div>Pants</div></a>
+							<a href="" class="nav-2-link"><div>Sweatpants</div></a>
+							<a href="" class="nav-2-link"><div>Skirts<b style="color:#eb5417 !important;"> NEW</b></div></a>
+							<a href="" class="nav-2-link"><div>Swimwear</div></a>
+						</ul>
+
+					</li>
+					<li><span class="nav-2-title">Footwear</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Boots</div></a>
+							<a href="" class="nav-2-link"><div>Sneakers</div></a>
+							<a href="" class="nav-2-link"><div>Shoes</div></a>
+						</ul>
+
+					</li>
+					<li class="endli"><span class="nav-2-title">Accessories</span>
+
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Bags</div></a>
+							<a href="" class="nav-2-link"><div>Underwear</div></a>
+							<a href="" class="nav-2-link"><div>Socks</div></a>
+							<a href="" class="nav-2-link"><div>Knitted Accessories</div></a>
+							<a href="" class="nav-2-link"><div>Other Accessories</div></a>
+						</ul>
+
+					</li>
+					
+				</ul>
+			</li>
+<!-- -->
+<!-- -->
+     		<li class="hover"><a class="nav-link" href="#sale">NEW</a>
+     			<ul class="nav-second" id="sale-nav">
+
+     				<li class="startli"><span class="nav-2-title">Men</span>
+						
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Outerwear</div></a>
+							<a href="" class="nav-2-link"><div>Tops</div></a>
+							<a href="" class="nav-2-link"><div>Bottoms</div></a>
+							<a href="" class="nav-2-link"><div>Footwear</div></a>
+							<a href="" class="nav-2-link"><div>Accessories</div></a>
+
+						</ul>
+
+					</li>
+
+					<li class="startli"><span class="nav-2-title">Women</span>
+						
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Outerwear</div></a>
+							<a href="" class="nav-2-link"><div>Tops</div></a>
+							<a href="" class="nav-2-link"><div>Bottoms</div></a>
+							<a href="" class="nav-2-link"><div>Footwear</div></a>
+							<a href="" class="nav-2-link"><div>Accessories</div></a>
+
+						</ul>
+
+					</li>
+
+					<li class="startli" style="border-right:none;"><span class="nav-2-title">Sport</span>
+						
+						<ul class="nav-2-list">
+							<a href="" class="nav-2-link"><div>Ski</div></a>
+							<a href="" class="nav-2-link"><div>Athletics</div></a>
+							<a href="" class="nav-2-link"><div>Sneakers</div></a>
+							<a href="" class="nav-2-link"><div>Gloves</div></a>
+
+						</ul>
+
+					</li>
+					
+				</ul>
+     		</li>
+
+     		<li class="hover"><a class="nav-link" href="#new" style="color:#eb5417 !important">SALE</a>
+     			<ul class="nav-second" id="new-nav" style="opacity:1 !important">
+					
+					<li class="nav-2-link"><div class="nav-2-title">On Sale</div>
+					</li>
+					<li class="newstyle3"><div class="bottom-sale">30% off</div></li>
+					<li class="newstyle4"><div class="bottom-sale">40% off</div></li>
+					<li class="newstyle2"><div class="bottom-sale">70% off</div></li>
+					<li class="newstyle1"><div class="bottom-sale">2 for 1</div></li>
+					<li class="newstyle6 endli"><div class="bottom-sale">FREE with purchase*</div></li>
+					
+				</ul>
+     		</li>
+
+     		<li class="user-info-small"><a class="nav-link" href="">ACCOUNT</a></li>
+				
+			<input style="display:inline-block" id="search" type="text" placeholder="Search..."></div></li>
+     		
+     		</ul>
+
+  </nav>
+</header>
+
+<a href=""><div id="newmarqueelol">
+	<div class="uqblock">NEW YEARS STYLES</div><div class="uqblock" style="background-color:#eb5417 !important; margin-right:7px;">From $12.99</div><p class="uqblocksub">Your year, your collection. New outerwear, accessories, and colorways.</p>
+</div></a>
+
+
+<div id="getemail">
+
+
+<a href=""><div id="splashed" class="hvr-pulse-shrink">
+<span id="salescontainer">
+<div id="sales">
+	<span id="sale-title">24-HOUR DEAL</span>
+	<span id="sale-desc"><span style="color:#eb5417;">$6 OFF</span> NEW HOODIES, T-SHIRTS, & SHORTS</span>
+
+<span id="countdown" class="timer" style="color:#eb5417"></span>
+
+<script>
+	var upgradeTime = 7000;
+var seconds = upgradeTime;
+function timer() {
+  var days        = Math.floor(seconds/24/60/60);
+  var hoursLeft   = Math.floor((seconds) - (days*86400));
+  var hours       = Math.floor(hoursLeft/3600);
+  var minutesLeft = Math.floor((hoursLeft) - (hours*3600));
+  var minutes     = Math.floor(minutesLeft/60);
+  var remainingSeconds = seconds % 60;
+  function pad(n) {
+    return (n < 10 ? "0" + n : n);
+  }
+  document.getElementById('countdown').innerHTML = pad(hours) + "hr " + pad(minutes) + "m " + pad(remainingSeconds) + "s"
+  if (seconds == 0) {
+    clearInterval(countdownTimer);
+    document.getElementById('countdown').innerHTML = "Completed";
+  } else {
+    seconds--;
+  }
+}
+var countdownTimer = setInterval('timer()', 1000);
+</script>
+
+<div class="menwomen" style="margin-top:14px; background-color:#3b8693; !important">Men</div>
+<div class="menwomen">Women</div>
+
+</div>
+</span>
+</div></a>
+
+<div id="email">
+	<!-- <h1 id="emailh1">GO ONE DIRECTION: <span style="color:#f0f0f0">FORWARD</span>.</h1> -->
+	<div class="godown"><p id="emailp">Get the latest updates on our signature prints and wardrobe winners. <br class="getout2"><b>And, receive 25% off your first online purchase.</b></p>
+
+		<!-- the resize problem is between here -->
+
+	<div id="emailform"><form><input type="email" id="emailinput" placeholder="Email" required><input type="submit" id="emailbutton" value="GO">
+
+		<span id="emailoptions"> 
+ 		<label for="mensemail"><span class="emailoptions"><input id="mensemail" type="checkbox" name="emailoptions" checked>Mens</span></label>
+ 		<label for="womensemail"><span class="emailoptions"><input id="womensemail" type="checkbox" name="emailoptions" checked>Womens</span></label>
+ 		<span id="stop"><label for="required" id="requiredplus"><span class="emailoptions"><input type="checkbox" name="emailoptions" required id="required">I want Superdry sales + promos.</span></label></span>
+ 		
+		</span>
+
+	</form></div>
+
+	<!-- the resize problem is between here -->
+
+</div>
+
+</div>
+
+</div>
+
+<main>
+
+<!-- CHOOSE YOUR TAB -->
+<!-- onmouseover="opentabmode(event, 'news');" -->
+<!-- <div class="menu">
+
+  <div id="hold">
+
+    <div class="tablink" href="javascript:void(0)" onclick="opentabmode(event, 'news');" pointer="">
+      <div><span class="eomer">News</span></div>
+    </div>
+
+    <a id="defaultOpen" class="tablink" href="javascript:void(0)" onclick="opentabmode(event, 'drops');">
+      <div><span class="eomer">Drops</span></div>
+    </a>
+
+    <a class="tablink" href="javascript:void(0)" onclick="opentabmode(event, 'shops');">
+      <div><span class="eomer">Find a Shop</span></div>
+    </a>
+  </div>
+
+ </div> -->
+
+<!-- TAB CONTENT STARTS HERE! -->
+
+<div id="news" class="tabmode">
+
+	<li id="newsheader"><img draggable="false" id="inline-logo" src="https://i.imgur.com/TkkJbIb.png">
+  	<span class="ah"><span class="diehyphen"> — </span>News</span></li>
+
+	<div id="newsdiv">
+
+		<li><!-- <div class="overlay2" onClick="style.pointerEvents='none'"></div> --><iframe id="newsvideo" src="https://www.youtube.com/embed/bA7R5t0zc1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+		<li>
+
+		<div class="pseudoh2">Collab: Idris Elba & Superdry <span style="color:#f0f0f0; font-style:italic; font-weight:300;">— Nov. 24</span></div>
+		<div class="pseudop">
+
+			<div class="quote"><span style="font-weight:300">Rugged, but stunning.</span><br><span style="font-weight:400">This is our collection:</span><br><span style="font-weight:900">Luxury, but necessary.</span></div>
+			
+			<a href=""><div class="pseudobutton">VIEW COLLECTION</div></a>
+
+		</div>
+
+		</li>
+
+  		
+
+
+	</div>
+
+</div>
+
+<!-- DROPS AND NEW ITEMS-->
+
+  <div id="drops" class="tabmode">
+
+	<li id="newsheader"><img draggable="false" id="inline-logo" src="https://i.imgur.com/TkkJbIb.png">
+
+  	<span class="ah"><span class="diehyphen"> — </span>Weekly Drops</span>
+
+  </li>
+New drops, sales, and collabs every Wednesday.<br><br>
+		<div class="dropli" id="we3">
+<span class="dropsbcontainer">
+			<a href=""><div class="dropsb">Shop Men</div></a>
+			<a href=""><div class="dropsb">Shop Women</div></a>
+</span>
+</div>
+
+  	<div id="dropsdiv">
+		<div class="dropli" id="we">
+<span class="dropsbcontainer">
+			<a href=""><div class="dropsb">Shop Men</div></a>
+			<a href=""><div class="dropsb">Shop Women</div></a>
+</span>
+</div>
+		<a href=""><div class="dropli" id="ay"></div></a>
+		<a href=""><div class="dropli" id="ay2"></div></a>
+		<a href=""><div class="dropli" id="ay3"></div></a>
+
+		<div class="dropli-bot we2">Must-have bombers, premium leathers, military parkas and <br>everything in between. We’ve got you covered.
+
+</div>
+		<div class="dropli-bot">Chillout Zip Hoodie<br><s>$74.50</s> $37.25</div>
+		<div class="dropli-bot">Active Logo Tank Top<br><s>$24.50</s> $20.50</div>
+		<div class="dropli-bot">Track & Field Zip Hoodie<br><s>$74.50</s> $37.25</div>
+  	</div>
+</div>
+  </div>
+
+<!-- STORE LOCATOR -->
+
+
+  <div id="shops" class="tabmode">
+  	<div id="shopsdiv">
+    
+  	<li class="shopheader"><img draggable="false" id="inline-logo" src="https://i.imgur.com/TkkJbIb.png">
+
+  		<span class="ah"><span class="diehyphen"> — </span>Store Locator</span></li>
+
+  	<li class="inputs">
+  		
+  		<form class="biginput">
+
+  			<div id="input-search"><input id="input1" type="text" placeholder="Enter a city or post code" required><input id="input2" type="submit" value="GO"></div>
+
+  		</form>
+
+  		<div class="input-reveal">
+  				<form>
+
+  				<label for="1"><div class="locationtab">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">SEAPORT</li>
+  					<li class="radiolocation2">22 Fulton Street, New York, 10038<br>646 274 3616</li>
+  				</ul>
+  				<input type="radio" name="location" id="1">
+  				
+  				</div></label>
+
+  				<label for="2"><div class="locationtab alt">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">SUPERDRY SOHO</li>
+  					<li class="radiolocation2">579 Broadway, 10012<BR>646-336-4910</li>
+  				</ul>
+  				<input type="radio" name="location" id="2">
+  				
+  				</div></label>
+
+  				<label for="3"><div class="locationtab">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">34TH STREET</li>
+  					<li class="radiolocation2">21-25 W 34th Street, Manhattan, 10001<br>646 329-9801</li>
+  				</ul>
+  				<input type="radio" name="location" id="3">
+  				
+  				</div></label>
+
+  				<label for="4"><div class="locationtab alt ">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">TIMES SQUARE</li>
+  					<li class="radiolocation2">729 7th Avenue, New York, 10019<br>646 783 2380</li>
+  				</ul>
+  				<input type="radio" name="location" id="4">
+  				
+  				</div></label>
+
+  				<label for="5"><div class="locationtab">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">SUPERDRY QUEENS CENTER</li>
+  					<li class="radiolocation2">90-15 Queens Blvd, Elmhurst, 11373<br>718-906-6650</li>
+  				</ul>
+  				<input type="radio" name="location" id="5">
+  				
+  				</div></label>
+
+  				<label for="6"><div class="locationtab alt">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">STATEN ISLAND MALL</li>
+  					<li class="radiolocation2">Unit 1100, 2655 Richmond Avenue, New York, 10314<br>718-407-6578</li>
+  				</ul>
+  				<input type="radio" name="location" id="6">
+  				
+  				</div></label>
+
+  				<label for="7"><div class="locationtab">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">BRIDGEWATER COMMONS</li>
+  					<li class="radiolocation2">2215 Bridgewater Commons, 400 Commons Way, <br>Bridgewater, 08807<br>732-832-7538</li>
+  				</ul>
+  				<input type="radio" name="location" id="7">
+  				
+  				</div></label>
+
+  				<label for="8"><div class="locationtab alt">
+  					<ul style="list-style:none; margin:0px; padding:0px;">
+  					<li class="radiolocation1">WOODBURY COMMONS (OUTLET)</li>
+  					<li class="radiolocation2">165 Marigold Court, Central Valley, New York, NY 10917<br>845-0928-3393</li>
+  				</ul>
+  				<input type="radio" name="location" id="8">
+  				
+  				</div></label>
+				
+				
+			
+			
+			
+				</form>
+  		</div>
+ 
+
+  	</li>
+
+  	<li class="map">
+  		<div class="overlay" onClick="style.pointerEvents='none'"></div>
+  		<iframe id="myjam" scrolling="no" src="https://www.google.com/maps/d/u/0/embed?mid=1AtY4ky4gcX8cAmhdYfOxAM0yTmSobEkK&zoom=90"></iframe></li>
+
+	</div>
+  </div>
+</div>
+
+<!-- tab select script! -->
+
+<!-- <script>
+function opentabmode(evt, tabselect) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabmode");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+  }
+  document.getElementById(tabselect).style.display = "block";
+
+
+}
+
+document.getElementById("defaultOpen").click();
+
+</script> -->
+
+</div>
+
+<!-- tab select script! -->
+
+</main>
+
+<footer>
+<div class="footer-container">
+<div class="footer-email">
+	<span class="footer-h1">NEWSLETTER</span>
+	<form id="footer-email">
+		<input id="footer-email" type="email" required><input id="footer-email-submit" type="submit" value="GO">
+
+	</form>
+</div>
+<div class="footer-div">
+	<span class="footer-h1">SUPERDRY.COM</span>
+	<ul>
+		<a href=""><li>Careers</li></a>
+		<a href=""><li>Corporate</li></a>
+		<a href=""><li>Site Feedback</li></a>
+		<a href=""><li>Returns</li></a>
+	</ul>
+</div>
+<div class="footer-div">
+	<span class="footer-h1">Help</span>
+	<ul>
+		<a href=""><li>Help Center</li></a>
+		<a href=""><li>FAQs</li></a>
+		<a href=""><li>Returns</li></a>
+		<a href=""><li>Contact Us</li></a>
+	</ul>
+	</span>
+</div>
+<div class="footer-div">
+	<span class="footer-h1">Information</span>
+	<ul>
+		<a href=""><li>Directory</li></a>
+		<a href=""><li>Terms</li></a>
+		<a href=""><li>Privacy</li></a>
+		<a href=""><li>Cookie Consent</li></a>
+	</ul>
+</div>
+<div class="footer-div">
+	<span class="footer-h1">About</span>
+	<ul>
+		<a href=""><li>About Us</li></a>
+		<a href=""><li>History</li></a>
+		<a href=""><li>Sustainability</li></a>
+	</ul>
+</div>
+<div class="footer-social">
+	<a href="https://www.youtube.com/user/SuperdryTV" alt="youtube"><i class="fab fa-youtube" target="_blank"></i></a>
+	<a href="https://www.instagram.com/superdry/?hl=en alt="instagram"><i class="fab fa-instagram" target="_blank"></i></a>
+	<a href="https://www.facebook.com/SuperdryUSA/?brand_redir=29575415534" target="_blank"><i class="fab fa-facebook-square"></i></a>
+	<a href="https://twitter.com/Superdry" target="_blank"><i class="fab fa-twitter-square"></i></a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
