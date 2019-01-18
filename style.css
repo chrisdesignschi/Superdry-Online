@@ -2028,9 +2028,16 @@ main {
 	margin-right:60px !important;
 }
 
-#newmarqueelol {
-	display:none;
+#popup {
+    width: 90%;
 }
+
+#popup div {
+	width:80%;
+	padding-top:0px;
+}
+
+
 
 }
 
