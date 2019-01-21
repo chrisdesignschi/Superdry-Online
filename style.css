@@ -162,6 +162,22 @@ html {
 	padding-top:0px !important;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #111; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #eb5417; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3b8693; 
+}
+
 .item-container {
 	padding:0 0 7px 0 !important;
 	height:140px;
