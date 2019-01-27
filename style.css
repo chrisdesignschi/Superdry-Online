@@ -1104,8 +1104,9 @@ a:-webkit-any-link {
 	padding:5px 8px 5px 8px;
 	margin-left:-6px;
 	display:block;
+	text-align:center;
 	border: 1px solid #111;
-	width:175px !important;
+	width:140px !important;
 	background-color:#fafafc;
 }
 
