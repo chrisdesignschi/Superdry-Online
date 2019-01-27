@@ -1089,7 +1089,6 @@ a:-webkit-any-link {
 	margin-top:auto;
 	margin-bottom:auto;
 	vertical-align: center;
-	text-align:center;
 	width:180px;
 	margin-left:2px;
 	padding:0 20px 0 20px;
@@ -1113,7 +1112,7 @@ a:-webkit-any-link {
 #sale-desc {
 	color:#111;
 	font-weight:700;
-	font-size:26px;
+	font-size:22px;
 	margin:auto;
 	padding:0PX;
 	margin-top:13px;
@@ -1125,6 +1124,12 @@ a:-webkit-any-link {
 	text-align:left;
 	text-transform: uppercase;
 	font-family:Staatliches;
+}
+
+.timer {
+	margin:0px;
+	text-align:left;
+	font-weight:400;
 }
 
 #sales-tag {
@@ -1144,7 +1149,6 @@ a:-webkit-any-link {
 	color:#fff;
 	font-family: staatliches;
 	font-size:17px;
-	margin:auto;
 	margin-top:5px;
 	margin-bottom:5px;
 	border: 1px solid #f0f0f0;
